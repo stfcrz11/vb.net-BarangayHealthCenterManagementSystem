@@ -1,0 +1,88 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BARANGAYBANTUGHEALTHCENTER
+</name>
+</assembly>
+<members>
+<member name="P:BARANGAY_BANTUG_HEALTH_CENTER.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:BARANGAY_BANTUG_HEALTH_CENTER.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.residentsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.PregnantDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.PrengnatWomenDetailsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.MUACStatusDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.SeniorCitizensDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.residentsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.PregnantRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.PrengnatWomenDetailsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.MUACStatusRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.SeniorCitizensRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.residentsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.PregnantRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.PrengnatWomenDetailsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.MUACStatusRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet.SeniorCitizensRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:BARANGAY_BANTUG_HEALTH_CENTER.ReportDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>

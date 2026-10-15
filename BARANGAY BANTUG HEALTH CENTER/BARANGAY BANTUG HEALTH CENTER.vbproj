@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{192C9456-05EF-44EB-9E6F-2E7DDE9F3BCD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>BARANGAY_BANTUG_HEALTH_CENTER.My.MyApplication</StartupObject>
+    <RootNamespace>BARANGAY_BANTUG_HEALTH_CENTER</RootNamespace>
+    <AssemblyName>BARANGAY BANTUG HEALTH CENTER</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BARANGAY BANTUG HEALTH CENTER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BARANGAY BANTUG HEALTH CENTER.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\..\..\OneDrive\Documents\SETUP FILES\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="MySql" />
+    <Import Include="MySql.Data" />
+    <Import Include="MySql.Data.Common" />
+    <Import Include="MySql.Data.MySqlClient" />
+    <Import Include="MySql.Data.MySqlClient.Authentication" />
+    <Import Include="MySql.Data.MySqlClient.Interceptors" />
+    <Import Include="MySql.Data.MySqlClient.Memcached" />
+    <Import Include="MySql.Data.MySqlClient.Replication" />
+    <Import Include="MySql.Data.MySqlClient.X" />
+    <Import Include="MySql.Data.MySqlClient.X.XDevAPI" />
+    <Import Include="MySql.Data.MySqlClient.X.XDevAPI.Common" />
+    <Import Include="MySql.Data.Types" />
+    <Import Include="MySqlX" />
+    <Import Include="MySqlX.Protocol" />
+    <Import Include="MySqlX.Serialization" />
+    <Import Include="MySqlX.XDevAPI" />
+    <Import Include="MySqlX.XDevAPI.Common" />
+    <Import Include="MySqlX.XDevAPI.CRUD" />
+    <Import Include="MySqlX.XDevAPI.Relational" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="conn.vb" />
+    <Compile Include="LogIn.Designer.vb">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masterlist20to59YearsOld.Designer.vb">
+      <DependentUpon>Masterlist20to59YearsOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Masterlist20to59YearsOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterlistofPregnantWoman.Designer.vb">
+      <DependentUpon>MasterlistofPregnantWoman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterlistofPregnantWoman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportDataSet.vb">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.Designer.vb">
+      <DependentUpon>UserManagement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserManagement.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View20to59YearsOld.Designer.vb">
+      <DependentUpon>View20to59YearsOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View20to59YearsOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateRecord20to59YearsOld.Designer.vb">
+      <DependentUpon>UpdateRecord20to59YearsOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRecord20to59YearsOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateRecordSeniorCitizen.Designer.vb">
+      <DependentUpon>UpdateRecordSeniorCitizen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRecordSeniorCitizen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateRecordPregnantWoman.Designer.vb">
+      <DependentUpon>UpdateRecordPregnantWoman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRecordPregnantWoman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateRecord1to19YearsOld.Designer.vb">
+      <DependentUpon>UpdateRecord1to19YearsOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRecord1to19YearsOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateRecord0to59MonthsOld.Designer.vb">
+      <DependentUpon>UpdateRecord0to59MonthsOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateRecord0to59MonthsOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewResident.Designer.vb">
+      <DependentUpon>NewResident.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewResident.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReferenceData.Designer.vb">
+      <DependentUpon>ReferenceData.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReferenceData.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports.Designer.vb">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reports.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SystemLogs.Designer.vb">
+      <DependentUpon>SystemLogs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SystemLogs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPastPregnancies.Designer.vb">
+      <DependentUpon>ViewPastPregnancies.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPastPregnancies.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewPregnantWoman.Designer.vb">
+      <DependentUpon>ViewPregnantWoman.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewPregnantWoman.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewSeniorCitizen.Designer.vb">
+      <DependentUpon>ViewSeniorCitizen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewSeniorCitizen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View0to59MonthsOld.Designer.vb">
+      <DependentUpon>View0to59MonthsOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View0to59MonthsOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View1to19YearsOld.Designer.vb">
+      <DependentUpon>View1to19YearsOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="View1to19YearsOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masterlist1to19YearsOld.Designer.vb">
+      <DependentUpon>Masterlist1to19YearsOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Masterlist1to19YearsOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.vb">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasterlistSeniorCitizens.Designer.vb">
+      <DependentUpon>MasterlistSeniorCitizens.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterlistSeniorCitizens.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masterlist0to59MonthsOld.Designer.vb">
+      <DependentUpon>Masterlist0to59MonthsOld.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Masterlist0to59MonthsOld.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TheMainForm.Designer.vb">
+      <DependentUpon>TheMainForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TheMainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="conn.resx">
+      <DependentUpon>conn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masterlist20to59YearsOld.resx">
+      <DependentUpon>Masterlist20to59YearsOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterlistofPregnantWoman.resx">
+      <DependentUpon>MasterlistofPregnantWoman.vb</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="Reports\MUACReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\PregnantDetailsReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\PregnantMasterlist.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\ResidentsReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Reports\SeniorReport.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="UpdateRecord20to59YearsOld.resx">
+      <DependentUpon>UpdateRecord20to59YearsOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateRecordSeniorCitizen.resx">
+      <DependentUpon>UpdateRecordSeniorCitizen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateRecordPregnantWoman.resx">
+      <DependentUpon>UpdateRecordPregnantWoman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateRecord1to19YearsOld.resx">
+      <DependentUpon>UpdateRecord1to19YearsOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateRecord0to59MonthsOld.resx">
+      <DependentUpon>UpdateRecord0to59MonthsOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewResident.resx">
+      <DependentUpon>NewResident.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReferenceData.resx">
+      <DependentUpon>ReferenceData.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports.resx">
+      <DependentUpon>Reports.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemLogs.resx">
+      <DependentUpon>SystemLogs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserManagement.resx">
+      <DependentUpon>UserManagement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View20to59YearsOld.resx">
+      <DependentUpon>View20to59YearsOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPastPregnancies.resx">
+      <DependentUpon>ViewPastPregnancies.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPregnantWoman.resx">
+      <DependentUpon>ViewPregnantWoman.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewSeniorCitizen.resx">
+      <DependentUpon>ViewSeniorCitizen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View0to59MonthsOld.resx">
+      <DependentUpon>View0to59MonthsOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View1to19YearsOld.resx">
+      <DependentUpon>View1to19YearsOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masterlist1to19YearsOld.resx">
+      <DependentUpon>Masterlist1to19YearsOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterlistSeniorCitizens.resx">
+      <DependentUpon>MasterlistSeniorCitizens.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masterlist0to59MonthsOld.resx">
+      <DependentUpon>Masterlist0to59MonthsOld.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TheMainForm.resx">
+      <DependentUpon>TheMainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="ReportDataSet.xsc">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="ReportDataSet.xss">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
